@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section id="section_body" class="section_body">
+    <div class="formBox" id="formBox">
+        <div class="formBoxChild" id="formBoxChild">
+            <div class="formReg" id="formReg">
+                <div class="firstName" id="firstName">
+                    <input required ="text" name="text" id="firstNameInput" class="firstNameInput" placeholder=" First Name">
+                </div>
+                <div class="lastName" id="lastName">
+                    <input required type="text" name="text" id="lastNameInput" class="lastNameInput" placeholder=" Last Name">
+                </div>
+                <div class="emailAdd" id="emailAdd">
+                    <input required type="email" name="email" id="emailAddInput" class="emailAddInput" placeholder=" Email Address">
+                </div>
+                <div class="userName" id="userName">
+                    <input required type="text" name="text" id="userNameInput" class="userNameInput" placeholder=" User Name">
+                </div>
+                <div class="passWord" id="passWord">
+                    <input required type="password" name="password" id="passWordInput" class="passWordInput" placeholder=" Password">
+                </div>
+                <div class="confirmPassword" id="confirmPassword">
+                    <input required type="password" name="text" id="confirmPasswordInput" class="confirmPasswordInput" placeholder=" Confirm Password">
+                </div>
+            </div>
+            <div class="submitBtn" id="submitBtn">
+                <input type="button" value="SUBMIT" class="submitButton" id="submitButton">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
