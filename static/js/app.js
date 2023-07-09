@@ -1,6 +1,8 @@
 const submitBtn = document.getElementById("submitButton");
 
 function func1() {
+
+    // this is the variables that get its data to the elements in the home.html
     const firstName = document.getElementById("firstNameInput");
     const lastName = document.getElementById("lastNameInput");
     const emailAdd = document.getElementById("emailAddInput");
@@ -11,6 +13,7 @@ function func1() {
     const UserName = "@" + userName.value
 
     if (passWord.value === confirmPass.value) {
+        //this is the json data that gets the data from the variables above
         var data = {
             firstName: firstName.value,
             lastName: lastName.value,
@@ -20,6 +23,7 @@ function func1() {
             confirmedPassword: confirmPass.value
         }
 
+        // this line of code sends the json data to the backend which is the python flask
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "/process_input", true);
         xhr.setRequestHeader("Content-Type", "application/json");
